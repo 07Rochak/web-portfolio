@@ -1,0 +1,153 @@
+.skill-desc-parent-container{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.skill-desc-child-container-1{
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    color: white;
+    border: 2px solid rgb(0, 187, 255);
+    border-radius: 15px;
+    background-color: #262626;
+}
+.skill-desc-child-container-2{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    /* flex: 0.85; */
+    transition: width 1s ease;
+    /* background-color: red; */
+}
+.skill-desc-child-container-1-title{
+    color: white;
+    display: flex;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-right: auto;
+    font-size: 1.8em;
+    padding-bottom: 10px;
+}
+.skill-desc-child-container-1-expand{
+    margin-left: auto;
+}
+.skill-desc-child-container-1-progress{
+    padding: 5% 9% 5% 9%;
+}
+.skill-desc-child-container-2-inner{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-right: 2px solid rgb(0, 187, 255);
+    border-top: 2px solid rgb(0, 187, 255);
+    border-bottom: 2px solid rgb(0, 187, 255);
+    background-color: #262626;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: width 1s ease;
+}
+.collapsed-class {
+    width: 0;
+    overflow: hidden;
+  }
+.collapse-button{
+  transition: all 1s ease-in-out
+}
+.skills-card-mobile{
+    display: none;
+}
+@media only screen and (max-width: 1100px){
+    .skill-desc-parent-container{
+        width: 90%;
+        height: 80%;
+    }
+}
+@media only screen and (max-width: 1000px)
+{
+    .skill-desc-parent-container{
+        width: 80%;
+        height: 80%;
+    }
+    .skill-desc-child-container-1{
+        width: 25%;
+        /* height: 85%; */
+    }
+    .skill-desc-child-container-2{
+        width: 72%;
+        /* height: 78%; */
+    }
+    .skill-desc-child-container-2-inner{
+        width: 100%;
+        height: 85%;
+    }
+    .skill-desc-child-container-1-title{
+        font-size: 1em;
+    }
+    .skill-desc-child-container-1-progress{
+        /* margin-top: 1%; */
+        position: relative;
+        /* padding: 0% 2.5% 0% 2.5%; */
+    }
+    .collapsed-class{
+        width: 0;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    .skill-desc-parent-container{
+        width: 80%;
+        height: 80%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .skill-desc-parent-container{
+        width: 90%;
+        height: 70%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .skill-desc-child-container-2-inner{
+        display: none;
+    }
+    .skill-desc-child-container-1{
+        width: 50%;
+    }
+    .mobile-all-skills{
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills-card-mobile{
+        display: flex;
+        height: 90%;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: #262626;
+        color: white;
+        padding-left: 5%;
+        border-right: 2px solid rgb(0, 187, 255);
+        border-top: 2px solid rgb(0, 187, 255);
+        border-bottom: 2px solid rgb(0, 187, 255);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: display 1s ease;
+    }
+    .collapsed-class-2 {
+        display: none;
+        overflow: hidden;
+      }
+}

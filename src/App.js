@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import AboutMe from './components/AboutMe'
+import ContactMe from './components/ContactMe'
+import Experience from './components/Experience'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Introduction from './components/Introduction'
+import Preloader from './components/Preloader'
+import Skills from './components/Skills'
+import React, { useEffect, useState } from 'react'
 
-function App() {
+function App () {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 8500)
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: '#0D0D0D' }}>
+      {
+        loading
+          ? <Preloader />
+          : <div className='app-css'>
+            <Header />
+            <Introduction />
+            <AboutMe />
+            <Skills />
+            <Experience />
+            <ContactMe />
+            <Footer />
+          </div>
+      }
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

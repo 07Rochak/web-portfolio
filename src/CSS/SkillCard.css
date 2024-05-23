@@ -1,0 +1,56 @@
+.skillCard-parent-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.skillCard-child-container-1{
+    display: flex;
+    flex-direction: row;
+}
+.skillCard-child-container-1-title{
+    flex: 0.9;
+    font-size: 1.3em;
+}
+.skillCard-child-container-1-percent{
+    flex: 0.1;
+    font-size: 1.3em;
+}
+.skillCard-child-container-2{
+    display: flex;
+}
+.skillCard-total{
+    position: relative;
+    width: 100%;
+    height: 22px;
+    background-color: #404040;
+    border-radius: 10px;
+}
+.skillCard-stat{
+    display: flex;
+    margin-top: 2px;
+    margin-left: 1%;
+    height: 18px;
+    background: linear-gradient(90deg, rgba(0,255,239,1) 0%, rgba(0,186,255,1) 35%, rgba(40,113,255,1) 100%);
+    border-radius: 10px;
+}
+@media only screen and (max-width: 1000px){
+    .skillCard-child-container-1-title{
+        font-size: 1em;
+    }
+    .skillCard-child-container-1-percent{
+        font-size: 1em;
+    }
+    .skillCard-total{
+        height: 18px;
+    }
+    .skillCard-stat{
+        height: 14px;
+    }
+    .skillCard-parent-container{
+        width: 80%;
+    }
+}

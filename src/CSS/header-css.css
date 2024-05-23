@@ -1,0 +1,50 @@
+/* font family bahnschrift */
+.bahnschrift-font{
+    font-family: Bahnschrift, Times, serif;
+}
+.active-class{
+    color: white;
+}
+.header-background{
+    background-color: #0D0D0D !important;
+}
+.header-text{
+    color: white;
+}
+.undAni{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 20px;
+    position: relative;
+  }
+.undAni:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0,255,239,1) 0%, rgba(0,186,255,1) 35%, rgba(40,113,255,1) 100%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.undAni:hover:After{
+    width: 100%;
+    left: 0;
+}
+.padding-4{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+@media only screen and (max-width: 900px)
+{
+    .padding-4{
+        padding-top: 0.2rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+}

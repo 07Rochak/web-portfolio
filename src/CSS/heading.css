@@ -1,0 +1,41 @@
+.heading-container{
+    display: flex;
+    flex-direction: row;
+}
+.heading-bar{
+    margin-top: 1.3em;
+    background: linear-gradient(90deg, rgba(0,255,239,1) 0%, rgba(0,186,255,1) 35%, rgba(40,113,255,1) 100%);
+    height: 5px;
+    width: 100px;
+    border-radius: 50px;
+}
+.heading-content{
+    margin-left: 15px;
+    font-size: 2em;
+    color: white;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../assets/fonts/futur.ttf') format('truetype');
+    /* Add additional font formats for better compatibility */
+}
+@media only screen and (max-width: 900px){
+    .heading-bar{
+        width: 80px;
+        margin-top: 1em;
+    }
+    .heading-content{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 800px){
+    .heading-bar{
+        height: 4px;
+        margin-top: 1em;
+    }
+    .heading-content{
+        font-size: 1.5em;
+        margin-left: 12px;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    }
+}

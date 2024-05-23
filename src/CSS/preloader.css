@@ -1,0 +1,140 @@
+.preloader{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+    animation: reduceHeight 1s ease-in-out 7s forwards;
+    transform-origin: bottom;
+}
+.first{
+    background-color: #000;
+    padding-left: 100px;
+    padding-right: 10px;
+}
+.preloader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 3em;
+    font-weight: 300;
+    overflow: hidden;
+    color: #fff;
+}
+.reveal-text {
+    padding-right: 100px;
+    display: inline-block;
+    position: relative;
+    transform: translateX(-100%);
+    animation: reveal 2s forwards;
+    animation-delay: 1.5s;
+    z-index: -1;
+    font-weight: 500;
+}
+
+@keyframes reveal {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.reveal-text-2 {
+    padding-right: 100px;
+    display: inline-block;
+    position: relative;
+    transform: translateX(-100%);
+    animation: reveal2 2s forwards;
+    animation-delay: 4s;
+    z-index: -1;
+    font-weight: 500;
+}
+body [data-aos-delay='4000'].aos-animate {
+    transition-delay: 4000ms;
+  }
+@keyframes reveal2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.cover-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    z-index: 2;
+    animation: cover 0.5s ease-out forwards;
+    animation-delay: 6s; /* Adjust delay time here */
+}
+
+@keyframes cover {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+.preloader-span{
+    padding-right: 20px;
+}
+@keyframes reduceHeight {
+    to {
+      height: 0;
+      transform-origin: bottom;
+      overflow: hidden;
+    }
+  }
+
+@media only screen and (max-width: 1000px){
+    .preloader .texts-container{
+        font-size: 2em;
+    }   
+}
+@media only screen and (max-width: 700px){
+    .preloader .texts-container{
+        font-size: 1.7em;
+    }
+}
+@media only screen and (max-width: 500px){
+    .preloader .texts-container{
+        font-size: 1.3em;
+        height: 30px;
+    }
+    .preloader-span{
+        padding-right: 5px;
+    }
+    .first{
+        padding-right: 5px;
+        padding-left: 40px;
+    }
+    .reveal-text{
+        padding-right: 40px;
+    }
+    .reveal-text-2{
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .preloader .texts-container{
+        font-size: 1.1em;
+    }
+}

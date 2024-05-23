@@ -1,0 +1,27 @@
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Scrollbar Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #666; /* Change this to your desired scrollbar color */
+    border-radius: 5px;
+  }
+  
+  /* Scrollbar Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Change this to your desired hover color */
+  }
+  
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #666 #333; /* Change this to your desired scrollbar color */
+  }
+  
+  /* Firefox scrollbar handle on hover */
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Change this to your desired hover color */
+  }
+  

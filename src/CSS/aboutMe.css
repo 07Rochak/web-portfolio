@@ -1,0 +1,154 @@
+.about-me{
+    color: white;
+    background-color: #0D0D0D;
+    height: 86vh;
+    width: 100%;
+}
+.about-me-parent-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-me-image{
+    background: url('../assets/me.jpg');
+    margin-left: 10%;
+    width: 90%;
+    border-radius: 50%;
+}
+.about-me-child-container1{
+    align-items: center;
+    flex: 0.6;
+    font-size: 1.5em;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.about-me-child-container2{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 0.4;
+}
+.about-me-main{
+    height: 100%;
+    padding-bottom: 5%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.resume-button-container{
+    position: relative;
+    margin-right: 73%; 
+    font-size: 1.5rem;
+}
+.resume-button{
+    background: linear-gradient(90deg, rgba(10,10,116,1) 0%, rgba(13,37,175,1) 30%, rgba(0,212,255,1) 91%);
+
+}
+@media only screen and (max-width: 1400px)
+{
+    .about-me{
+    height: 90vh;
+    /* height: 90vh;  ipad pro horizontal optimization */
+    }
+    .about-me-child-container1{
+        font-size: 1.25em;
+    }
+}
+@media only screen and (max-width: 1200px)
+{
+    .about-me{
+        height: 93vh;
+    }
+}
+@media only screen and (max-width: 1100px)
+{
+    .about-me-child-container1{
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 1050px)
+{
+    .about-me {
+        /* height: 93vh; */
+        height: 85vh; /*ipad optimization*/
+    }
+    .about-me-child-container1{
+        font-size: 1.1em;
+    }
+}
+@media only screen and (max-width: 950px)
+{
+    .about-me {
+        height: 93vh;
+    }
+    .about-me-child-container1{
+        font-size: 0.8em;
+    }
+    .about-me-image{
+        width: 75%;
+    }
+    .resume-button-container{
+        margin-right: 70%;
+    }
+    .resume-button{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 900px){
+    .about-me-child-container1{
+        font-size: 0.75em;
+    }
+    .about-me-image{
+        width: 65%;
+        margin-left: 20%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .about-me{
+        height: 90vh;
+    }
+    .about-me-image{
+        width: 80%;
+        margin-left: 5%;
+    }
+    .resume-button-container{
+        margin-right: 65%;
+    }
+
+}
+@media only screen and (max-width: 700px){
+    .about-me-parent-container{
+        flex-direction: column-reverse;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .about-me-image{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-me-child-container1{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 500px){
+    .about-me-image{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-me-child-container1{
+        padding-top: 40px;
+        font-size: 0.85em;
+    }
+    .about-me{
+        height: 100%;
+        padding-bottom: 5%;
+    }
+    .resume-button-container{
+        margin-right: 58%;
+    }
+}
